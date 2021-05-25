@@ -1,0 +1,34 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: grid;
+	margin: 0;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 100vh;
+}
+
+div.display {
+	position: relative;
+	background-color: #f0f;
+	padding: 25px;
+	min-width: 100px;
+}
+
+div.controls {
+	background-color: #0ff;
+	padding: 25px;
+}
+
+canvas {
+	position: absolute;
+	height: calc(100% - 50px);
+	width: calc(100% - 50px);
+}
+
+#canvas0 {
+	display: none;
+}
+
+p.error {
+	font-size: 0.8rem;
+	width: 200px;
+}
